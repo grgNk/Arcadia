@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+nav{
+	background:#B3988F;
+}
+nav a{
+	color:white;
+}
+nav a:hover{
+	background:#73625C;
+}
+section#service{
+    background: #eeddd8;
+}
+.info{
+	color:white;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+.warp{
+	color:white;
+}
+.warp:hover{
+	color:#E8E8E8;
+}
+.splt{
+  background-color: white;
+}
+.ftr{
+  background-color: #73625C;
+}
+.lbl{
+	color:white;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+.service_button {
+	box-shadow: 0px 0px 3px 0px black;
+	background-color:white;
+	color:black;
+}
+
+form{
+	background-color: white;
+}
+form input, form textarea, form select{
+	background-color: #f3f3f3;
+	border: 0px solid black;
+}
+.submit_button{
+	color: white;
+	background-color: #B3988F;
+}
+.frame{
+    border: 1px solid rgb(0, 0, 0);
+}

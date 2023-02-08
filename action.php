@@ -40,6 +40,6 @@
 		</div>
 		<div style="padding-top:25px"></div>
 		<a class="warp" href="javascript:history.go(-1)">&olarr; Назад</a>
-	</div>
+	</section>
 </body>
 </html>

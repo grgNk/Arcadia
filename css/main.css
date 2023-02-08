@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+*{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+section{
+	position:relative;
+	width:100%;
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-size: 100% auto;
+}
+nav{
+	position: fixed;
+	top:0;
+	width:100%;
+	text-align: center;
+}
+nav img{
+	height:70px;
+	position:relative;
+	padding: 1px 50px;
+	display: inline-block;
+	cursor: pointer;
+}
+nav a{
+	position:relative;
+	text-align:center;
+	text-decoration: none;
+	padding: 5px 90px;
+	font-family: 'Jost', sans-serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	display: inline-block;
+}
+nav a:hover{
+	background:#73625C;
+}
+.info{
+	font-family: 'Jost', sans-serif;
+	font-size: 2.5em;
+	font-weight: 400;
+	text-align: center;
+	padding: 0px 300px;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+.warp{
+	font-family: 'Jost', sans-serif;
+	font-size: 2.5em;
+	font-weight: 400;
+	text-align: center;
+	padding: 100px 300px;
+	text-decoration: none;
+}
+.splt{
+  width: 800px;
+  height: 3px;
+  margin: 1.2%;
+}
+.ftr{
+  position: relative;
+  top: 14em;
+  z-index:  2;
+  width:100%;
+  height:250px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lbl{
+	font-family: 'Jost', sans-serif;
+	font-size: 1.7em;
+	font-weight: 500;
+	text-align: center;
+	padding: 0px 200px;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+	text-decoration: none;
+}
+.service_list{
+  width:100%;
+  height:300px;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service_button {
+	border-radius:10px;
+	font-family: 'Jost', sans-serif;
+	font-size: 1.7em;
+	font-weight: 500;
+	padding:50px 25px;
+	text-decoration:none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.service_button img{
+	width:170px;
+	height:100%;
+	display: inline-block;
+}
+
+.form_background{
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	background-color: transparent;
+}
+.form_background.active{
+	visibility: visible;
+	background-color: rgba(0,0,0,0.7);
+}
+.form_container{
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	overflow:auto;
+	transform: skew(40deg, 50deg);
+	transition: 0.2s ease-in-out;
+}
+.form_container.active{
+	visibility: visible;
+	transform: skew(0deg, 0deg);
+}
+form{
+	margin: auto;
+	width: 450px;
+	border-radius: 15px;
+	text-align: center;
+	padding: 20px 5px 25px 5px;
+	position: relative;
+}
+form p{
+	text-decoration: none;
+	font-family: 'Jost', sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+form input, form textarea, form select{
+	display: block;
+	margin: 25px auto 0px auto;
+	width: 330px;
+	padding: 17px 20px;
+	border-radius: 15px;
+	text-decoration: none;
+	font-family: 'Jost', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	resize: vertical;
+}
+input:invalid, textarea:invalid, select:invalid{
+	color: #eb4c42;
+}
+.submit_button{
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 20px;
+}
+.form_close{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.frame{
+	margin: 3px auto 0px auto;
+    border-radius: 10px;
+}
+.elem_add, .elem_remove{
+	display: inline-block;
+	margin: 10px auto 10px auto;
+	width: 25px;
+	padding: 1px 1px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: 'Jost', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	resize: vertical;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 20px;
+	color: white;
+}
+.elem_add{
+	background-color: #17c200;
+}
+.elem_remove{
+	background-color: rgb(218, 23, 23);
+}
