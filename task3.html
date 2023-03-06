@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - селекторы</title>
+    <style>
+        div p {
+            color: white;
+            background-color: black;
+        }
+        div h2 {
+            background-color: mediumturquoise;
+            transform: rotate(0.5deg);
+        }
+        #test p {
+            background-color: blueviolet;
+            transform: scale(98%);
+        }
+        #test h2 {
+            color: darkseagreen;
+            background-color: lightgray;
+        }
+        .bbb {
+            background-color: darkseagreen;
+            transform: rotate(-0.7deg);
+        }
+        #test .bbb {
+            color: yellow;
+        }
+        p.bbb {
+            font-weight: bold;
+        }
+        h2.bbb {
+            transform: rotate(0.6deg);
+        }
+        #test p.bbb {
+            color: aquamarine;
+        }
+        div h2, p {
+            font-family: cursive;
+        }
+        .bbb, .xxx {
+            letter-spacing: 5px;
+        }
+        p.bbb, h2.xxx {
+            background-color: thistle;
+        }
+        #test p.bbb, #test p.xxx {
+            background-image: linear-gradient(to left, violet, indigo);
+        }
+        .fff {
+            background-color: mediumaquamarine;
+        }
+        .fff p {
+            color: red;
+        }
+        p.fff {
+            background-color: beige;
+        }
+        .fff .bbb {
+            font-size: 20px;
+        }
+        .fff h2.bbb {
+            background-color: purple;
+        }
+        #test a:link, #test a:visited {
+            text-decoration: none;
+            color: red;
+        }
+        #test a:hover {
+            text-decoration-line: underline;
+            color: blue;
+        }
+        a:link.www, a:visited.www {
+            text-decoration-line: underline;
+            color: blue;
+        }
+        a:hover.www {
+            text-decoration: none;
+        }
+        #test a:link.www, #test a:visited.www {
+            text-decoration-line: line-through;
+            color: purple;
+        }
+        #test a:hover.www {
+            text-decoration: none;
+            color: magenta;
+        }
+        .eee a:link.www, .eee a:visited.www {
+            text-decoration-line: grammar-error;
+            color: darkmagenta;
+        }
+        .eee a:hover.www {
+            text-decoration-line: underline;
+            color: darkorange;
+        }
+        p>i {
+            color: darkcyan;
+        }
+        ul>li {
+            text-decoration-line: underline;
+        }
+        p>a.test {
+            background-color: black;
+            color: white;
+        }
+        b+i {
+            background-image: linear-gradient(to top, bisque, lightyellow);
+            font-size: 20px;
+        }
+        #test b+i {
+            color: purple;
+        }
+        ul+p {
+            background-color: cornflowerblue;
+        }
+        h1~p {
+            background-color: lightslategrey;
+            color: floralwhite;
+        }
+        #test h2~p {
+            transform: rotate3d(20, 20, 20, 1deg);
+        }
+        p * i {
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Задание 1</p>
+        <h2>Задание 2</h2>
+    </div>
+    <div id="test">
+        <p>Задание 3</p>
+        <h2>Задание 4</h2>
+        <h1 class="bbb">Задание 6</h1>
+        <p class="bbb">Задание 9</p>
+        <h2>Задание 10</h2>
+        <p class="xxx">Задание 13</p>
+        <a href="#">Задание 19</a>
+        <a href="#" class="www">Задание 21</a>
+        <b>Зада</b>
+        <i>ние 27</i>
+        <p>Задание 30</p>
+    </div>
+    <h3 class="bbb">Задание 5</h3>
+    <p class="bbb">Задание 7, 12</p>
+    <h2 class="bbb">Задание 8</h2>
+    <h2 class="xxx">Задание 11</h2>
+    <div class="fff">
+        <h3>Задание 14</h3>
+        <p class="fff">Задание 15</p>
+        <h2 class="bbb">Задание 17, 18</h2>
+    </div>
+    <p class="fff">Задание 16</p>
+    <a href="#" class="www">Задание 20</a>
+    <div class="eee">
+        <a href="#" class="www">Задание 22</a>
+    </div>
+    <p>Задание <i>23</i></p>
+    <ul>Задание <li>24</li></ul>
+    <p>Задание <a href="#" class="test">25</a></p>
+    <b>Зада</b>
+    <i>ние 26</i>
+    <ul>Зада</ul>
+    <p>ние 28</p>
+    <h1>Зада</h1>
+    <p>ние 29</p>
+    <p><span><i>Задание 31</i></span></p>
+</body>
+</html>
